@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+    <title>Mini World</title>
+
+    <script src="tabs.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="media" style="text-align: center; height: 100%; position: sticky; top: 10; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+            <img src="kae01.jpg" alt="Kaela's Image" style="width: 100%; border-radius: 1%;">
+            <p style="font-size: 20px; padding-left: 0; text-shadow: 2px 2px 5px #b7a8a2;"><b>Kaela Callum</b></p>
+
+            <div class="icon-bar" >
+                <a href="https://github.com/KaeCal" target="_blank">GitHub</a> <!-- next window -->
+                <a href="#">Email</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Indeed</a>
+            </div>
+        </div>
+
+
+
+        <div class="port-content" style="">
+            <div class="headBar" style="position: sticky; top: 10;">
+                <!--onclick="window.open('xyz.pdf')"-->
+                <button id="default" class="headTab" onclick="openEvent(event, 'Home')">Home</button>
+                <button class="headTab" onclick="openEvent(event, 'About')">About</button>
+                <button class="headTab" onclick="openEvent(event, 'Projects')">Projects</button>
+                <button class="headTab" onclick="openEvent(event, 'Certified')">Certified</button>
+                <button class="headTab" onclick="openEvent(event, 'Journal')">Journal</button>
+                <button class="headTab" onclick="openEvent(event, 'Contact')">Contact</button>
+            </div>
+
+            <div id="Home" class="tabContent" style="display: block; padding-left: 5%;">
+                <h1>Hello World! I'm Kaela, a software developer.</h1>
+                <p>Collaborative computer scientist who wants to learn software development in any phase of SDLC. Searching to utilize my skillset in building experience within business requirements. Looking to build or maintain applications to serve customers with easy-to-use interfaces for technical problems.</p>
+            </div>
+
+            <div id="About" class="tabContent" style="display: none; padding-left: 5%;">
+                <h2>More Context</h2>
+                <p>Example Text</p>
+            </div>
+
+            <div id="Projects" class="tabContent" style="display: none; padding-left: 5%;">
+                <h2>Mobile Music Practice App</h2>
+                    <p>Example Text</p>
+                <h2>Mobile School Resource App</h2>
+                    <p>Example Text</p>
+            </div>
+
+            <div id="Certified" class="tabContent" style="display: none; padding-left: 5%;">
+                <h2>Enter PDF</h2>
+                <p></p>
+            </div>
+
+            <div id="Journal" class="tabContent" style="display: none; padding-left: 5%;">
+                <h3>v1.0.0  8.21.23</h3>
+                <p>Skeleton website launched!</p>
+            </div>
+
+            <div id="Contact" class="tabContent" style="display: none; padding-left: 5%;">
+                <h3>Email: kcallum10@gmail.com</h3>
+                    <p>Feel free to email for business, resume request, or questions about my projects.</p>
+                <h3>Career Cites</h3>
+                <p>LinkedIn</p>
+                <p>Indeed</p>
+                <p>Dice</p>
+                <p>Glass Door</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    .main {
+        display: flex;
+    }
+    .media{
+        width: 20%;
+        font-size: 20px;
+        color: white;
+        background-color: #b7a8a2;
+        float: center;
+    }
+    .port-content{
+        width: 100%;
+    }
+
+    .icon-bar {
+        width: 100%;
+    }
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 15px;
+    }
+    .icon-bar a:hover {
+        background-color: #735f58;
+    }
+
+    .headBar {
+        overflow: hidden;
+        background-color: #808294;
+    }
+    .headBar button{
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 18px;
+    }
+    .headBar button:hover {
+        background-color: #2f3344;
+        color: white;
+        border: none;
+    }
+    .headBar button.active {
+        background-color: #2f3344;
+        color: white;
+        border: none;
+    }
+    .tabContent {
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+        padding: 6px 12px;
+        border-top: none;
+        background-color: #d5dce4;
+     }
+
+
+
+
+</style>
+
+</body>
+</html>
